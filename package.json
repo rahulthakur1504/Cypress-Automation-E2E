@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress-prod-env": "npx cypress run --spec cypress/e2e/cssLocators.cy.js --config-file cypress.prod.config.js",
     "cypress-stage-env": "npx cypress run --spec cypress/e2e/registerFlow.cy.js --config-file cypress.stage.config.js",
-    "cypress-addtoCartflow": "npx cypress run --spec cypress/e2e/test/addToCart.cy.js"
+    "cypress-addtoCartflow": "npx cypress run --spec cypress/e2e/test/addToCart.cy.js",
+    "cypress-registration-flow": "npx cypress run --spec cypress/e2e/test/registertest.cy.js"
   },
   "author": "Rahul Thakur",
   "license": "ISC",
