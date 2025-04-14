@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          command: npm run cypress-cypress-addtoCart-flow
+          command: npm run cypress-addtoCart-flow
 
 
       - name: Cypress Test Report 
