@@ -1,26 +1,27 @@
-name: Parallel Testing 
-on: push
+name: Parallel Testing
+
+on: 
+  push:
+
 jobs:
-  Add to cart-run:
+  add-to-cart-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+
+      - name: Cypress run - Add to Cart Flow
         uses: cypress-io/github-action@v6
         with:
-          command: cypress-addtoCartflow
+          command: npm run cypress-addtoCartflow
 
   registration-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+
+      - name: Cypress run - Registration Flow
         uses: cypress-io/github-action@v6
         with:
-          command: cypress-registration-flow
+          command: npm run cypress-registration-flow
