@@ -13,7 +13,7 @@ jobs:
       - name: Cypress run - Add to Cart Flow
         uses: cypress-io/github-action@v6
         with:
-          command: npm run cypress-addtoCartflow
+          command: npm run cypress-addtoCart-flow
 
   registration-run:
     runs-on: ubuntu-24.04
@@ -24,4 +24,4 @@ jobs:
       - name: Cypress run - Registration Flow
         uses: cypress-io/github-action@v6
         with:
-          command: npm run cypress-registration-flow
+          command: npm run cypress-registration-Flow
