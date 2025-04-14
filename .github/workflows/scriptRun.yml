@@ -1,4 +1,4 @@
-name: Regression End-to-end tests
+name: Sanity Testing 
 on: push
 jobs:
   cypress-run:
@@ -11,6 +11,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-        command: npm run cypress-addtoCartflow
+          command: npm run cypress-addtoCartflow
 
 
