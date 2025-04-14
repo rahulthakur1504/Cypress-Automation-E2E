@@ -1,0 +1,24 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-prod-env": "npx cypress run --spec cypress/e2e/cssLocators.cy.js --config-file cypress.prod.config.js",
+    "cypress-stage-env": "npx cypress run --spec cypress/e2e/registerFlow.cy.js --config-file cypress.stage.config.js",
+    "cypress-addtoCartflow": "npx cypress run --spec cypress/e2e/test/addToCart.cy.js"
+  },
+  "author": "Rahul Thakur",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.3.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "chai": "^5.2.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-shadow-dom": "^1.4.1",
+    "mocha": "^11.1.0"
+  }
+}
