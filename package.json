@@ -7,7 +7,11 @@
     "cypress-prod-env": "npx cypress run --spec cypress/e2e/cssLocators.cy.js --config-file cypress.prod.config.js",
     "cypress-stage-env": "npx cypress run --spec cypress/e2e/registerFlow.cy.js --config-file cypress.stage.config.js",
     "cypress-addtoCart-flow": "npx cypress run --spec cypress/e2e/test/addToCart.cy.js",
-    "cypress-registration-Flow": "npx cypress run --spec cypress/e2e/test/registertest.cy.js"
+    "cypress-registration-Flow": "npx cypress run --spec cypress/e2e/test/registertest.cy.js",
+
+    "cypress-API-getRequestFlow": "npx cypress run --spec cypress/e2e/APIAutomation/getRequestAPI.cy.js",
+    "cypress-API-postRequestFlow": "npx cypress run --spec cypress/e2e/APIAutomation/postRequest.cy.js"
+
   },
   "author": "Rahul Thakur",
   "license": "ISC",
